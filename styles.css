@@ -351,17 +351,6 @@ hr.style2 {
     font-weight: normal;  
 }
 
-/* .crypto-address {
-    display: inline-block;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 80%;
-    background-color: #4fa8e9;
-    padding: 10px 10px;
-    border-radius: 8px;
-    margin-left: -520px;
-} */
-
 .crypto-address {
     display: inline-block;
     font-family: "Montserrat", sans-serif;  
@@ -376,21 +365,6 @@ hr.style2 {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     margin-left: -520px;
 }
-
-/* .crypto-button {
-    padding: 10px 20px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 80%;
-    background-color: #4caf50;
-    color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 680px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-} */
 
 .crypto-button {
     padding: 10px 20px;
