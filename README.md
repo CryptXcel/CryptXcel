@@ -1,6 +1,4 @@
-# CryptXcel Web Files
-
-This repository contains the web files for the CryptXcel website.
+# CryptXcel
 
 Visit the live site: [CryptXcel](https://cryptxcel.github.io/CryptXcel)
 
