@@ -1,6 +1,9 @@
 # CryptXcel
 
+![CryptXcel Logo](images/logo.png)
+
 Visit the live site: [CryptXcel](https://cryptxcel.github.io/CryptXcel)
+
 
 ---
 
