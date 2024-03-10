@@ -1,16 +1,15 @@
-### Hi there 👋
+# CryptXcel Web Files
 
-<!--
-**CryptXcel/CryptXcel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository contains the web files for the CryptXcel website.
 
-Here are some ideas to get you started:
+Visit the live site: [CryptXcel](https://cryptxcel.github.io/CryptXcel)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+**Copyright &copy; 2021-2024 Damaged Battery Inc. All rights reserved.**
+
+Cryptexcel&reg; and Damaged Battery Inc are registered trademarks.
+
+Other names may be trademarks of their respective companies. Specifications and availability are subject to change.
+
+Follow us on [Twitter](https://twitter.com/CryptXcel)
