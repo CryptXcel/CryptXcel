@@ -123,7 +123,7 @@ a.active:hover {
     margin: 0 auto;
     width: 100%;
     height: 100vh;
-    background-image: url('../images/wallpaper.jpg');
+    background-image: url('./images/wallpaper.jpg');
     overflow-y: hidden; 
 }
 
@@ -165,7 +165,7 @@ a.active:hover {
     padding: 1%;
     margin-right: -15px;
     margin-top: 22px;
-    background-image: url('../images/wallpaper.jpg');
+    background-image: url('./images/wallpaper.jpg');
 }
 
 .special-heading {
