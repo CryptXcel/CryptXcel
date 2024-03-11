@@ -1,5 +1,7 @@
 # CryptXcel
 
+Repository for CryptXcel Website files
+
 Visit the live site: [CryptXcel](https://cryptxcel.github.io/CryptXcel)
 
 Follow us on [Twitter](https://twitter.com/CryptXcel)
