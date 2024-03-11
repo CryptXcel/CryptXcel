@@ -2,6 +2,7 @@
 
 Visit the live site: [CryptXcel](https://cryptxcel.github.io/CryptXcel)
 
+Follow us on [Twitter](https://twitter.com/CryptXcel)
 
 ---
 
@@ -10,5 +11,3 @@ Visit the live site: [CryptXcel](https://cryptxcel.github.io/CryptXcel)
 CryptXcel&reg; and Damaged Battery Inc are registered trademarks.
 
 Other names may be trademarks of their respective companies. Specifications and availability are subject to change.
-
-Follow us on [Twitter](https://twitter.com/CryptXcel)
