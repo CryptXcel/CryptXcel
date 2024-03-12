@@ -4,11 +4,11 @@ body {
     overflow: hidden;
 }
 
-/* body::before {
+body::before {
     content: url('./images/background3.jpg');
     display: none;
 }
- */
+
 header {
     background-size: cover;
     padding: 0.5%;
