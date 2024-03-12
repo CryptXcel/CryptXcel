@@ -64,6 +64,7 @@ a.active:hover {
     display: inline-block;
     width: 19%;
     height: 77vh;
+    float: left;
     background-color: #55585d;
     overflow-x: hidden;
     overflow-y: auto;
