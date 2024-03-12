@@ -1,20 +1,30 @@
-// Code for images in the left window home page
 // Function to open the enlarged image modal
 function openEnlargedImage(src) {
-    const modal = document.querySelector('.enlarged-image-modal');
-    const enlargedImage = document.querySelector('.enlarged-image');
-    enlargedImage.src = src;
-    modal.style.display = 'flex';
+    var modal = document.querySelector('.enlarged-image-modal');
+    var enlargedImage = document.querySelector('.enlarged-image');
+
+    // Create a new Image object
+    var img = new Image();
+
+    // Set up an event listener for the 'load' event
+    img.onload = function() {
+        // Once the image is loaded, set the source for the enlarged image
+        enlargedImage.src = src;
+        modal.style.display = 'flex';
+    };
+
+    // Set the source for the image AFTER setting up the event listener
+    img.src = src;
 }
 
 // Function to close the enlarged image modal
 function closeEnlargedImage(event) {
     // Check if the click target or its parent is the close button
-    const isCloseButton = event.target.classList.contains('close-button') ||
-                          event.target.parentElement.classList.contains('close-button');
+    var isCloseButton = event.target.classList.contains('close-button') ||
+                        event.target.parentElement.classList.contains('close-button');
 
     if (isCloseButton) {
-        const modal = document.querySelector('.enlarged-image-modal');
+        var modal = document.querySelector('.enlarged-image-modal');
         modal.style.display = 'none';
     }
 }
@@ -42,7 +52,7 @@ function copyText(elementId, networkMessage) {
     try {
         // Copy the selected text to the clipboard using the modern clipboard API
         navigator.clipboard.writeText(textArea.value)
-            .then(() => {
+            .then(function() {
                 // Create a custom notification with the copied address and network message
                 var notification = document.createElement("div");
                 notification.classList.add("copy-notification");
@@ -55,7 +65,7 @@ function copyText(elementId, networkMessage) {
                     document.body.removeChild(textArea);
                 }, 5000); 
             })
-            .catch(err => {
+            .catch(function(err) {
                 console.error("Unable to copy the text: ", err);
             });
 
@@ -66,24 +76,23 @@ function copyText(elementId, networkMessage) {
 
 // Function to add/remove the 'hovered' class on the crypto address
 function toggleHoveredClass(addressId) {
-    const cryptoAddress = document.getElementById(addressId);
+    var cryptoAddress = document.getElementById(addressId);
     cryptoAddress.classList.toggle('hovered');
 }
 
 // Add event listeners to all crypto buttons
-const cryptoButtons = document.querySelectorAll('.crypto-button');
+var cryptoButtons = document.querySelectorAll('.crypto-button');
 
-cryptoButtons.forEach(button => {
+cryptoButtons.forEach(function(button) {
     button.addEventListener('mouseover', function() {
         // Extract the corresponding address ID from the button's data attribute
-        const addressId = this.getAttribute('data-address-id');
+        var addressId = this.getAttribute('data-address-id');
         toggleHoveredClass(addressId);
     });
 
     button.addEventListener('mouseout', function() {
         // Extract the corresponding address ID from the button's data attribute
-        const addressId = this.getAttribute('data-address-id');
+        var addressId = this.getAttribute('data-address-id');
         toggleHoveredClass(addressId);
     });
 });
-
