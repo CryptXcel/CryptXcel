@@ -1,1 +1,525 @@
 
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-size: cover;
+    padding: 0.5%;
+}
+
+h1 {
+    color: #FFD700;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 110%;
+    margin-top: 0px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: inline-block;
+    min-width: 100px;
+    padding: 0.8%;
+    text-decoration: none;
+    border-radius: 35px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFD700;
+    text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555;
+    transition: text-shadow 0.1s ease;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 97%;
+    margin: 10px 1%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #808080;
+}
+
+nav a:hover {
+    text-shadow: -1px -1px 0.1px #ffcc00, 1px -1px 0.1px #ffcc00, -1px 1px 0.1px #ffcc00, 1px 1px 0.1px #ffcc00;
+}
+
+.active,
+a.active:hover {
+    color: #696969;
+    background-color: #C0C0C0;
+    text-shadow: -1px -1px 0 #ffcc00, 1px -1px 0 #ffcc00, -1px 1px 0 #ffcc00, 1px 1px 0 #ffcc00;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Code for left window in home page */
+.left {
+    display: inline-block;
+    width: 19%;
+    height: 77vh;
+    background-color: #55585d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.left .image-container {
+    margin-top: 12px; 
+    margin-bottom: 12px; 
+}
+
+.left .image-container:hover {
+    transform: scale(1.1); 
+    transition: transform 0.7s ease;  
+}
+
+.enlarged-image-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.enlarged-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close-button img {
+    width: 30px;   
+    height: auto;  
+    margin-top: -10px;
+}
+
+.close-button {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Settings for right window in home page */
+.right {
+    max-width: 81%;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    float: right;
+    overflow-y: hidden; 
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Style for the external link icon/image */
+.external-link-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Style for the external link text */
+.external-link span {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: underline;  
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Settings for regular pages */
+.right h2 {
+    color: #1D6F42;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 150%;
+    padding: 1.5%;
+    margin-top: 30px;
+    margin-left: 60px; 
+}
+
+.reg_page {
+    height: calc(80vh - 20px);
+    overflow-x: hidden;
+    padding: 1%;
+    margin-right: -15px;
+    margin-top: 22px;
+}
+
+.special-heading {
+    text-align: center;
+    font-size: 250%;
+    color: #1D6F42;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+h2 {
+    color: #1D6F42;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 150%;
+    padding: 1.5%;
+    margin-top: -5px;
+    margin-left: 60px; 
+}
+
+.reg_page img.product-image {
+    margin-left: 1.6%;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60px; 
+}
+
+.product-text {
+    margin-top: -200px;
+    margin-left: 30px; 
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 105%;
+    padding: 1.5%;
+    margin-left: 60px; 
+    margin-right: 60px; 
+    text-align: justify;
+}
+
+img {
+    display: block;
+    width: 90%;
+    border: solid 0px #000000;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+a {
+    color: #1D6F42;
+    font-size: 150%;
+    padding: 1.5%;
+    margin-left: 60px;
+}
+
+/* line separator in faq page*/
+hr.style2 {
+    border-top: 3px double #8c8b8b;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+.reg_page h2 {
+    margin-bottom: 10px;  
+}
+
+.reg_page p {
+    margin-top: -5px; 
+}
+
+.reg_page iframe {
+    display: block;
+    margin: 0 auto;  
+    max-width: 80%;  
+    width: 100%;  
+    height: 50vh;
+    margin-top: -2px;
+}
+
+/* Settings for faq page */
+.reg_page .faq-p {
+    color: #008000;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 105%;
+    padding: 1.5%;
+    text-align: justify;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.reg_page .faq-indent {
+    color: #008000;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 105%;
+    padding: 1.5%;
+    text-align: justify;
+    margin-top: -30px;
+    margin-left: 150px;
+    margin-right: 60px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Settings for elements in download page */
+/* Enhanced styles for the page titles */
+.payment-option {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.payment-option h3 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 120%;
+    color: #1D6F42;
+    margin-bottom: 10px;
+}
+
+/* Style for link styled as a button */
+.paypal-donate-link {
+    text-decoration: none;
+}
+
+/* Styling for PayPal Donate Button */
+#paypal-donate-button {
+    max-width: 250px;
+    background-color: #e0e0e0;  
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0.1px solid #777171;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);  
+    margin-left: 100px; 
+}
+
+#paypal-donate-button:hover {
+    background-color: #c0c0c0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 4px 0 8px rgba(0, 0, 0, 0.4), 4px 4px 16px rgba(0, 0, 0, 0.5);  
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Settings for crypto elements */
+.crypto-logo {
+    width: 40px;
+    height: auto;
+    margin-bottom: -38px;
+    margin-left: 80px;
+}
+
+/* Styling for coin-name and ticker-symbol in crypto-container */
+.crypto-container h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;  
+    color: #333;  
+    margin-top: -30px;
+    margin-left: 150px;
+}
+
+.coin-name {
+    font-weight: bold;
+}
+
+.ticker-symbol {
+    font-weight: normal;  
+}
+
+.crypto-address {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;  
+    font-weight: bold;
+    font-size: 71%;  
+    color: #f0f0f0;  
+    background: linear-gradient(to right, #4fa8e9, #265191);
+    padding: 10px 15px;
+    border: 1px solid #265191;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: -520px;
+}
+
+.crypto-button {
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+    background-color: #4caf50;
+    color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1200px; /* Auto margin on the left to push the button to the right */
+    margin-right: -500px; /* Add some space between the crypto address and the button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.crypto-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);  
+    border-color: #ccc;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for crypto address when hover over copy button */
+.crypto-button:hover + .crypto-address,
+.crypto-address.hovered {
+    text-shadow: -2px -2px 3px #45a049, 2px -2px 3px #45a049, -2px 2px 3px #45a049, 2px 2px 3px #45a049;
+}
+
+/* Address copied notification pop up window */
+.copy-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    background-color: #2c3e50;  
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 1; }
+}
+
+.copy-notification::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #ecf0f1;  
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+/* Settings for copy-notification text */
+.styled-text {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Settings for app download link */
+#download-link img {
+    display: block;
+    max-width: 18%;
+    border: 3px solid #1D6F42;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: -10px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#download-link img:hover {
+    border-color: #FFD700;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.download-list {
+    color: inherit;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 105%;
+    padding: 1.5%;
+    text-align: justify;
+    margin-top: -30px;
+    margin-left: 150px;
+    margin-right: 60px;
+}
+
+.download-list li::after {
+    content: '\A';  
+    white-space: pre;  
+    display: block; 
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Copyright text footer settings for home page */
+.footer {
+    position: absolute;
+    padding: 10px;
+    bottom: -15px;
+    width: 100%;
+}
+
+.copyright-text {
+    background-color: #2c2c2c;  
+    padding: 9px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff; 
+    z-index: 999;
+    margin-inline-start: -19px;
+    margin-inline-end: -19px;
+    margin-bottom: -10px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-logo {
+    display: inline-block;
+    max-width: 50px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 150px;
+}
+
+.twitter-logo {
+    display: inline-block;
+    max-width: 45px; 
+    margin-top: -13px;
+    margin-bottom: -10px;
+    margin-right: 80px; 
+    margin-left: 50px;
+    cursor: pointer;    
+}
