@@ -1,9 +1,9 @@
 /* Place these @font-face declarations at the beginning of your CSS file */
-@font-face {
+/* @font-face {
     font-family: 'Montserrat';
     src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   }
-
+ */
 body {
     padding: 0;
     margin: 0;
