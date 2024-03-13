@@ -36,7 +36,7 @@ nav a {
     color: #FFD700;
     text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555;
     transition: text-shadow 0.1s ease;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 97%;
@@ -147,7 +147,7 @@ a.active:hover {
 /* Settings for regular pages */
 .right h2 {
     color: #1D6F42;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 150%;
@@ -168,14 +168,14 @@ a.active:hover {
     text-align: center;
     font-size: 250%;
     color: #1D6F42;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     font-weight: 600;
 }
 
 h2 {
     color: #1D6F42;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 150%;
@@ -210,7 +210,7 @@ h2 {
 }
 
 p {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 250;
     font-size: 105%;
@@ -264,7 +264,7 @@ hr.style2 {
 .reg_page .faq-p {
     color: #008000;
     font-weight: bold;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-size: 105%;
     padding: 1.5%;
@@ -276,7 +276,7 @@ hr.style2 {
 .reg_page .faq-indent {
     color: #008000;
     font-weight: 600;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-size: 105%;
     padding: 1.5%;
@@ -298,7 +298,7 @@ hr.style2 {
 }
 
 .payment-option h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 120%;
@@ -340,7 +340,7 @@ hr.style2 {
 
 /* Styling for coin-name and ticker-symbol in crypto-container */
 .crypto-container h4 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 15px;  
     color: #333;  
@@ -358,7 +358,7 @@ hr.style2 {
 
 .crypto-address {
     display: inline-block;
-    font-family: "Montserrat";  
+    font-family: "Montserrat", sans-serif;  
     font-weight: bold;
     font-size: 71%;  
     color: #f0f0f0;  
@@ -373,7 +373,7 @@ hr.style2 {
 
 .crypto-button {
     padding: 10px 20px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 80%;
     background-color: #4caf50;
@@ -463,7 +463,7 @@ hr.style2 {
 .download-list {
     color: inherit;
     font-weight: 600;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-size: 105%;
     padding: 1.5%;
