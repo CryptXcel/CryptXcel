@@ -1,4 +1,3 @@
-
 body {
     padding: 0;
     margin: 0;
@@ -15,7 +14,6 @@ h1 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-style: italic;
-    font-style: bold;
     font-weight: 900;
     font-size: 210%;
     margin-top: 0px;
@@ -214,7 +212,7 @@ h2 {
 p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 250;
+    font-weight: 300;
     font-size: 105%;
     padding: 1.5%;
     margin-left: 60px; 
@@ -362,7 +360,7 @@ hr.style2 {
     display: inline-block;
     font-family: "Montserrat", sans-serif;  
     font-weight: bold;
-    font-size: 71%;  
+    font-size: 72%;  
     color: #f0f0f0;  
     background: linear-gradient(to right, #4fa8e9, #265191);
     padding: 10px 15px;
