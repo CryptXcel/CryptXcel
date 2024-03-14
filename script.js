@@ -35,12 +35,6 @@ function closeEnlargedImage(event) {
 document.addEventListener('click', closeEnlargedImage);
 
 // Prevent closing the modal when clicking on the enlarged image
-// document.querySelector('.enlarged-image').addEventListener('click', function (event) {
-//     'use strict';
-//     event.stopPropagation();
-// });
-
-// Prevent closing the modal when clicking on the enlarged image
 var enlargedImage = document.querySelector('.enlarged-image');
 if (enlargedImage) {
     enlargedImage.addEventListener('click', function (event) {
