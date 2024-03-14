@@ -35,10 +35,19 @@ function closeEnlargedImage(event) {
 document.addEventListener('click', closeEnlargedImage);
 
 // Prevent closing the modal when clicking on the enlarged image
-if document.querySelector('.enlarged-image').addEventListener('click', function (event) {
-    'use strict';
-    event.stopPropagation();
-});
+// document.querySelector('.enlarged-image').addEventListener('click', function (event) {
+//     'use strict';
+//     event.stopPropagation();
+// });
+
+// Prevent closing the modal when clicking on the enlarged image
+var enlargedImage = document.querySelector('.enlarged-image');
+if (enlargedImage) {
+    enlargedImage.addEventListener('click', function (event) {
+        'use strict';
+        event.stopPropagation();
+    });
+}
 
 // Function to copy the text to the clipboard with a network message
 function copyText(elementId, networkMessage) {
