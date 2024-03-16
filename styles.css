@@ -61,7 +61,7 @@ a.active:hover {
 .left {
     display: inline-block;
     width: 19%;
-    height: 77vh;
+    height: 73.4vh;
     background-color: #55585d;
     overflow-x: hidden;
     overflow-y: auto;
@@ -85,8 +85,6 @@ a.active:hover {
     transform: translate(-50%, -50%);
     max-width: 100vw;
     max-height: 100vh;
-    /* z-index: 999;
-    overflow: hidden; */
 }
 
 .enlarged-image {
@@ -116,18 +114,15 @@ a.active:hover {
 /* Settings for right window in home page */
 .right {
     max-width: 81%;
-    /* margin: 0 auto; */
     width: 100%;
     height: 100vh;
     float: right;
-    /* overflow-y: hidden;  */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 /* Style for the external link icon/image */
 .external-link-icon {
-    /* display: inline-block; */
     width: 32px;
     height: 32px;
     margin-right: 5px;
@@ -138,7 +133,6 @@ a.active:hover {
 .external-link span {
     display: inline-block;
     vertical-align: middle;
-    /* text-decoration: underline;   */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
@@ -335,7 +329,6 @@ hr.style2 {
 /* Styling for coin-name and ticker-symbol in crypto-container */
 .crypto-container h4 {
     font-family: "Montserrat", sans-serif;
-    /* font-weight: bold; */
     font-size: 15px;  
     color: #333;  
     margin-top: -30px;
@@ -478,23 +471,22 @@ hr.style2 {
 /* Copyright text footer settings for home page */
 .footer {
     position: absolute;
-    padding: 4px;
-    bottom: 4px;
+    padding: 2px;
+    bottom: 2px;
     width: 100%;
 }
 
 .copyright-text {
     background-color: #2c2c2c;  
-    padding: 12px;
     text-align: center;
     font-size: 13px;
     color: #fff; 
     z-index: 999;
-    margin-inline-start: -22px;
-    margin-inline-end: -22px;
-    margin-bottom: -25px;
+    margin-inline-start: -21px;
+    margin-inline-end: -21px;
+    margin-bottom: -8px;
     display: flex;
-    height: 70px;
+    height: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -502,7 +494,7 @@ hr.style2 {
 .copyright-logo {
     display: inline-block;
     max-width: 50px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 80px;
     margin-right: 150px;
 }
@@ -510,7 +502,6 @@ hr.style2 {
 .twitter-logo {
     display: inline-block;
     max-width: 45px; 
-    margin-top: -13px;
     margin-bottom: -10px;
     margin-right: 80px; 
     margin-left: 50px;
