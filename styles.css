@@ -61,7 +61,7 @@ a.active:hover {
 .left {
     display: inline-block;
     width: 19%;
-    height: 74.1vh;
+    height: 75vh;
     background-color: #55585d;
     overflow-x: hidden;
     overflow-y: auto;
