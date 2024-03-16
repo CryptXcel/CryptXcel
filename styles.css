@@ -61,7 +61,7 @@ a.active:hover {
 .left {
     display: inline-block;
     width: 19%;
-    height: 73.4vh;
+    height: 74.1vh;
     background-color: #55585d;
     overflow-x: hidden;
     overflow-y: auto;
@@ -484,9 +484,9 @@ hr.style2 {
     z-index: 999;
     margin-inline-start: -21px;
     margin-inline-end: -21px;
-    margin-bottom: -8px;
+    margin-bottom: -16px;
     display: flex;
-    height: 40px;
+    height: 50px;
     align-items: center;
     justify-content: center;
 }
